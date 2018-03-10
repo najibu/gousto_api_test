@@ -39,5 +39,7 @@ GET                  /api/v1/recipes?page=2                                 Fetc
 - It uses a REST protocol for easy data access.
 - I have used HTTP headers for serialization formats which let both client and server to know which format is used for the communication.
 
-## Relevant to solution
+### Relevant to solution
 The CSV is stored in resources/csv/recipe-data.csv
+
+#### Thank you for checking out gousto api
