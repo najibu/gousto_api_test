@@ -37,7 +37,7 @@ GET                  /api/v1/recipes?page=2                                 Fetc
 - Error handling is well implemented.
 - Supports return types that are relevant to other API consumers (JSON).
 - It uses a REST protocol for easy data access.
-- I have used HTTP headers for serialization formats which let both client and server to know which format is used for the communication.
+- I have used HTTP headers for serialization formats which let both client and server to know which format is used the communication.
 
 ### Relevant to solution
 The CSV is stored in resources/csv/recipe-data.csv
