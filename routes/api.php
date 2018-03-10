@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +12,8 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(['prefix' => 'v1'], function () {
+    Route::resource('recipes', RecipesController::class);
+    Route::get('recipes_by_cuisine/{cuisine}', 'RecipesController@fetchAllByCuisine');
+    Route::post('recipes/{id}/rate', 'RatingsController@store');
 });

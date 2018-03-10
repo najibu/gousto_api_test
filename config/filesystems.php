@@ -64,6 +64,11 @@ return [
             'url' => env('AWS_URL'),
         ],
 
+        'csv' => [
+            'driver' => 'local',
+            'root' => resource_path('csv'),
+        ],
+
     ],
 
 ];
